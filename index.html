@@ -7,25 +7,69 @@
     <title>Cadastre seu Pet</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Serviços</a>
-            <a href="#">Contato</a>
-        </nav>
+    <div class="conteiner">
+        <div class="img-box">
+            <img src="imagens/undraw_pet_adoption_-2-qkw.svg" alt="imagem-findo">
+        </div>
 
-        <input type="se">
-    </header>
+        <div class="form-box">
+            <form action="#" method="get" autocomplete="off">
+                <fieldset>
+                    <legend>Nome</legend>
+                    <input type="text" name="nome" id="inome" required minlength="8" maxlength="18" placeholder="nome do pat">
+                </fieldset>
 
-    <main>
-        <section>
+                <fieldset>
+                    <legend>RA (Registro Animal)</legend>
+                    <input type="text" name="ra" id="ira" required placeholder="gereno">
+                </fieldset>
 
-        </section>
+                <fieldset>
+                    <legend>Data Nascimento</legend>
+                    <input type="date" name="data" id="idata" required>
+                </fieldset>
 
-        <section>
+                <fieldset>
+                    <legend>Gênero</legend>
+                    <input type="text" name="genero" id="igenero" required placeholder="Genero">
+                </fieldset>
 
-        </section>
-    </main>
+                <fieldset>
+                    <legend>Castrado</legend>
+                    <input type="text" name="castrado" id="icastrado" required placeholder="castrado">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Raça</legend>
+                    <input type="text" name="raça" id="iraça" required placeholder="raça">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cor</legend>
+                    <input type="text" name="cor" id="icor" required placeholder="raça">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nome da Mãe</legend>
+                    <input type="text" name="nm" id="inm" required  minlength="8" maxlength="18" placeholder="nome mae">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nome do Pai</legend>
+                    <input type="text" name="np" id="inp" required minlength="8" maxlength="18" placeholder="nome do pai">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Naturalidade</legend>
+                    <input type="text" name="nat" id="inat" required placeholder="naturalidade">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Data de Expedição</legend>
+                    <input type="date" name="data-exp" id="idata-exp" required>
+                </fieldset>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
