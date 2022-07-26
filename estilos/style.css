@@ -102,7 +102,8 @@ body{
 .input-columns{
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
+    margin: 0.2rem;
+    padding: 0.1px 0.5px;
 }
 
 .input-columns input{
@@ -112,6 +113,12 @@ body{
     border: none;
     border-bottom: 1px solid black;
 
+}
+
+.input-columns legend{
+    font-size: 0.7rem;
+    color: var(--rosa2);
+    text-shadow: 1px 1px 0px black;
 }
 
 @media screen and (max-width: 1330px;){
