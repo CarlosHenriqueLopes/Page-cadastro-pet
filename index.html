@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre seu Pet</title>
+
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <div class="conteiner">
@@ -14,60 +16,70 @@
 
         <div class="form-box">
             <form action="#" method="get" autocomplete="off">
-                <fieldset>
+                <div class="header-box">
+                    <div class="h1-box">
+                        <h1>Certidão do Pet</h1>
+                    </div>
+                </div>
+
+                <fieldset class="fieldset-box">
                     <legend>Nome</legend>
-                    <input type="text" name="nome" id="inome" required minlength="8" maxlength="18" placeholder="nome do pat">
+                    <input type="text" name="nome" id="inome" required minlength="8" maxlength="18">
                 </fieldset>
 
-                <fieldset>
-                    <legend>RA (Registro Animal)</legend>
-                    <input type="text" name="ra" id="ira" required placeholder="gereno">
-                </fieldset>
+                <fieldset class="fieldset-columns">
+                    <div class="columns-group">
+                        <div class="input-columns">
+                            <label for="ira">RA (Registro Animal)</label>
+                            <input type="text" name="ra" id="ira" required placeholder="gereno">
+                        </div>
 
-                <fieldset>
-                    <legend>Data Nascimento</legend>
-                    <input type="date" name="data" id="idata" required>
-                </fieldset>
+                        <div class="input-columns">
+                            <label for="idata">Data Nascimento</label>
+                            <input type="date" name="data" id="idata" required>
+                        </div>
 
-                <fieldset>
-                    <legend>Gênero</legend>
-                    <input type="text" name="genero" id="igenero" required placeholder="Genero">
-                </fieldset>
+                        <div class="input-columns">
+                            <label for="igenero">Gênero</label>
+                            <input type="text" name="genero" id="igenero" required placeholder="Genero">
+                        </div>
 
-                <fieldset>
-                    <legend>Castrado</legend>
-                    <input type="text" name="castrado" id="icastrado" required placeholder="castrado">
-                </fieldset>
+                        <div class="input-columns">
+                            <label for="icadastro">Castrado</label>
+                            <input type="text" name="castrado" id="icastrado" required placeholder="castrado">
+                        </div>
 
-                <fieldset>
-                    <legend>Raça</legend>
-                    <input type="text" name="raça" id="iraça" required placeholder="raça">
-                </fieldset>
+                        <div class="input-columns">
+                            <label for="iraça">Raça</label>
+                            <input type="text" name="raça" id="iraça" required placeholder="raça">
+                        </div>
 
-                <fieldset>
-                    <legend>Cor</legend>
-                    <input type="text" name="cor" id="icor" required placeholder="raça">
-                </fieldset>
+                        <div class="input-columns">
+                            <label for="icor">Cor</label>
+                            <input type="text" name="cor" id="icor" required placeholder="raça">
+                        </div>
 
-                <fieldset>
-                    <legend>Nome da Mãe</legend>
-                    <input type="text" name="nm" id="inm" required  minlength="8" maxlength="18" placeholder="nome mae">
-                </fieldset>
+                        <div class="input-columns">
+                            <label for="inat">Naturalidade</label>
+                            <input type="text" name="nat" id="inat" required placeholder="naturalidade">
+                        </div>
 
-                <fieldset>
-                    <legend>Nome do Pai</legend>
-                    <input type="text" name="np" id="inp" required minlength="8" maxlength="18" placeholder="nome do pai">
-                </fieldset>
+                        <div class="input-columns">
+                            <label for="idata-exp">Data Expedição</label>
+                            <input type="date" name="data-exp" id="idata-exp" required>
+                        </div>
+                    </div>
+            </fieldset>
 
-                <fieldset>
-                    <legend>Naturalidade</legend>
-                    <input type="text" name="nat" id="inat" required placeholder="naturalidade">
-                </fieldset>
+            <fieldset class="fieldset-box">
+                <legend>Nome da Mãe</legend>
+                <input type="text" name="nm" id="inm" required>
+            </fieldset>
 
-                <fieldset>
-                    <legend>Data de Expedição</legend>
-                    <input type="date" name="data-exp" id="idata-exp" required>
-                </fieldset>
+            <fieldset class="fieldset-box">
+                <legend>Nome do Pai</legend>
+                <input type="text" name="np" id="inp" required>
+            </fieldset>
             </form>
         </div>
     </div>
