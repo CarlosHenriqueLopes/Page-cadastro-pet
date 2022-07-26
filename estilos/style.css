@@ -55,20 +55,15 @@ body{
     width: 50%;
     align-items: center;
     justify-content: center;
+    padding: 0.3rem;
     background-color: var(--azul);
 }
 
-/*.header-box h1::after{
-    content: '';
-    display: block;
-    position: absolute;
-
-    width: 5rem;
-    height: 0.3rem;
-    margin: auto;
-    border-radius: 10px;
-    background-color: black;
-}*/
+.header-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .fieldset-box{
     margin: 0.6rem 0rem;
@@ -78,6 +73,7 @@ body{
     width: 100%;
     background-color: transparent;
     border: none;
+    outline: none;
 }
 
 .fieldset-box legend{
@@ -111,12 +107,6 @@ body{
     padding: 0.6rem 1rem;
     background-color: transparent;
     border: none;
-
-}
-
-.fieldset-box input{
-    border: none;
-    background-color: transparent;
     outline: none;
 }
 
@@ -124,6 +114,29 @@ body{
     font-size: 0.7rem;
     color: var(--rosa2);
     text-shadow: 1px 1px 0px black;
+}
+
+.botao button{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.60rem;
+    border: none;
+    background-color: var(--rosa2);
+}
+
+.botao button:hover{
+    background-color: var(--rosa1);
+    box-shadow: 2px 2px 10px var(--rosa1);
+}
+
+.botao a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px 0px var(--rosa1);
+}
+
+.botao a:hover{
+    text-shadow: 1px 1px 0px var(--amarelo);
 }
 
 @media screen and (max-width: 1330px){
@@ -136,11 +149,7 @@ body{
     }
 
     .form-box{
-        width: 50%;
-    }
-
-    .fieldset-columns{
-        padding: 100%;
+        width: 100%;
     }
 }
 
